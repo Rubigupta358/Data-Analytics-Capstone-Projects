@@ -1,0 +1,11 @@
+Build the Tableau workbook using data/processed/customer_360.csv,
+rfm_segments.csv, attribution_orders.csv and campaign_performance.csv.
+
+Recommended dashboard sheets:
+1. Customer 360: KPI tiles for customers, sessions, orders, revenue; region and segment filters.
+2. RFM Segments: customer count by Segment; Recency vs Frequency; Monetary by segment.
+3. Marketing Attribution: revenue by first_touch and last_touch; compare first-touch, last-touch and linear credit.
+4. Campaign Performance: spend, revenue, ROI and CPA by channel.
+
+Use customer_id as the customer key. Format revenue and spend as currency.
+Save the workbook as DA02_Customer360_Attribution.twbx.

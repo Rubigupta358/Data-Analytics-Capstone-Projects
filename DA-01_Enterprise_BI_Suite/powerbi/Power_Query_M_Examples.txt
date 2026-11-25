@@ -1,0 +1,10 @@
+Example Power Query steps (adjust source path to your folder):
+1. Get Data > Text/CSV and import FactSales.csv, DimCustomer.csv, DimProduct.csv, DimTerritory.csv, DimDate.csv.
+2. Set OrderDate and Date to Date type; amounts to Decimal Number; keys and quantity to Whole Number.
+3. Remove blank rows and check key columns for errors.
+4. Keep one row per key in each dimension.
+5. Load the five tables and create relationships:
+   FactSales[CustomerKey] -> DimCustomer[CustomerKey]
+   FactSales[ProductKey] -> DimProduct[ProductKey]
+   FactSales[TerritoryKey] -> DimTerritory[TerritoryKey]
+   FactSales[OrderDate] -> DimDate[Date]

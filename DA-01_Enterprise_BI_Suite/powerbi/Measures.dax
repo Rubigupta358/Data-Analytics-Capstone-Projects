@@ -1,0 +1,10 @@
+Total Sales = SUM(FactSales[SalesAmount])
+Total Profit = SUM(FactSales[ProfitAmount])
+Total Orders = DISTINCTCOUNT(FactSales[SalesOrderKey])
+Units Sold = SUM(FactSales[Quantity])
+Profit Margin % = DIVIDE([Total Profit], [Total Sales], 0)
+Sales YTD = TOTALYTD([Total Sales], DimDate[Date])
+Sales Previous Year = CALCULATE([Total Sales], SAMEPERIODLASTYEAR(DimDate[Date]))
+YoY Growth % = DIVIDE([Total Sales] - [Sales Previous Year], [Sales Previous Year], 0)
+Rolling 3 Month Sales =
+CALCULATE([Total Sales], DATESINPERIOD(DimDate[Date], MAX(DimDate[Date]), -3, MONTH))

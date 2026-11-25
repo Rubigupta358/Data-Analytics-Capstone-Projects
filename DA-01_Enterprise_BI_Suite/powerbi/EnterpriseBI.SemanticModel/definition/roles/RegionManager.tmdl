@@ -1,0 +1,4 @@
+role RegionManager
+	modelPermission: read
+
+	tablePermission DimTerritory = DimTerritory[Region] IN SELECTCOLUMNS(FILTER(UserRegion, UserRegion[UserEmail] = USERPRINCIPALNAME()), "r", UserRegion[Region])

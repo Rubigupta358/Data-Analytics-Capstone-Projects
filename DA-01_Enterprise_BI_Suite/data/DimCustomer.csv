@@ -1,0 +1,61 @@
+CustomerKey,CustomerName,Region,Country,CustomerSegment
+1,Customer 001,North,Germany,Corporate
+2,Customer 002,West,United Kingdom,Small Business
+3,Customer 003,East,United States,Corporate
+4,Customer 004,South,Germany,Corporate
+5,Customer 005,South,United States,Small Business
+6,Customer 006,West,United States,Corporate
+7,Customer 007,North,Germany,Consumer
+8,Customer 008,East,United States,Small Business
+9,Customer 009,North,India,Corporate
+10,Customer 010,North,United States,Corporate
+11,Customer 011,East,Germany,Corporate
+12,Customer 012,West,India,Corporate
+13,Customer 013,East,United States,Consumer
+14,Customer 014,West,India,Corporate
+15,Customer 015,East,United Kingdom,Small Business
+16,Customer 016,West,United States,Consumer
+17,Customer 017,East,United States,Corporate
+18,Customer 018,North,India,Consumer
+19,Customer 019,West,United Kingdom,Corporate
+20,Customer 020,South,United Kingdom,Corporate
+21,Customer 021,East,Germany,Small Business
+22,Customer 022,South,United States,Consumer
+23,Customer 023,North,India,Consumer
+24,Customer 024,West,Germany,Corporate
+25,Customer 025,West,United Kingdom,Small Business
+26,Customer 026,East,United Kingdom,Small Business
+27,Customer 027,South,India,Consumer
+28,Customer 028,West,United States,Consumer
+29,Customer 029,East,Germany,Small Business
+30,Customer 030,South,Germany,Consumer
+31,Customer 031,South,United States,Small Business
+32,Customer 032,North,Germany,Consumer
+33,Customer 033,North,Germany,Small Business
+34,Customer 034,East,United States,Consumer
+35,Customer 035,West,Germany,Corporate
+36,Customer 036,North,United States,Corporate
+37,Customer 037,West,India,Consumer
+38,Customer 038,West,United Kingdom,Corporate
+39,Customer 039,South,United Kingdom,Corporate
+40,Customer 040,East,India,Small Business
+41,Customer 041,North,Germany,Small Business
+42,Customer 042,West,India,Corporate
+43,Customer 043,East,Germany,Corporate
+44,Customer 044,South,India,Corporate
+45,Customer 045,North,Germany,Corporate
+46,Customer 046,West,Germany,Small Business
+47,Customer 047,South,Germany,Consumer
+48,Customer 048,West,United Kingdom,Consumer
+49,Customer 049,East,United States,Corporate
+50,Customer 050,West,United Kingdom,Consumer
+51,Customer 051,West,United States,Consumer
+52,Customer 052,North,Germany,Consumer
+53,Customer 053,South,United Kingdom,Small Business
+54,Customer 054,South,United States,Small Business
+55,Customer 055,South,United Kingdom,Small Business
+56,Customer 056,North,United Kingdom,Corporate
+57,Customer 057,East,India,Small Business
+58,Customer 058,North,India,Consumer
+59,Customer 059,East,India,Small Business
+60,Customer 060,East,India,Corporate

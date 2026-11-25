@@ -1,0 +1,21 @@
+ProductKey,ProductName,Category,Subcategory,UnitCost,UnitPrice
+1,Product 01,Clothing,Premium,122.11,118.47
+2,Product 02,Accessories,Standard,62.56,465.56
+3,Product 03,Bikes,Premium,86.9,307.29
+4,Product 04,Clothing,Standard,151.12,199.56
+5,Product 05,Bikes,Premium,56.54,311.82
+6,Product 06,Bikes,Basic,216.3,50.49
+7,Product 07,Accessories,Standard,193.25,480.94
+8,Product 08,Bikes,Standard,184.07,261.86
+9,Product 09,Accessories,Basic,116.54,400.06
+10,Product 10,Accessories,Standard,162.42,78.06
+11,Product 11,Clothing,Basic,152.26,263.86
+12,Product 12,Bikes,Standard,167.71,265.73
+13,Product 13,Bikes,Standard,34.84,471.4
+14,Product 14,Bikes,Premium,112.71,302.99
+15,Product 15,Clothing,Standard,24.78,257.81
+16,Product 16,Accessories,Basic,131.09,162.81
+17,Product 17,Bikes,Basic,92.52,192.52
+18,Product 18,Accessories,Basic,48.96,279.51
+19,Product 19,Bikes,Premium,39.3,241.9
+20,Product 20,Clothing,Standard,153.1,49.94

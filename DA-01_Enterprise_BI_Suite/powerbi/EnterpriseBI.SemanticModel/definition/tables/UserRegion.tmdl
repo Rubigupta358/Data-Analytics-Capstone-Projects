@@ -1,0 +1,23 @@
+table UserRegion
+
+	column UserEmail
+		dataType: string
+		summarizeBy: none
+		sourceColumn: UserEmail
+
+	column Region
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Region
+
+	partition UserRegion = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\UserRegion.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"UserEmail", type text}, {"Region", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

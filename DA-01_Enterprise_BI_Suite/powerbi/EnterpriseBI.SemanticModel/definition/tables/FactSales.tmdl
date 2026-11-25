@@ -1,0 +1,131 @@
+table FactSales
+
+	measure 'Total Sales' = SUM(FactSales[SalesAmount])
+		formatString: #,0
+		displayFolder: Sales
+
+	measure 'Total Profit' = SUM(FactSales[ProfitAmount])
+		formatString: #,0
+		displayFolder: Sales
+
+	measure 'Total Cost' = SUM(FactSales[CostAmount])
+		formatString: #,0
+		displayFolder: Sales
+
+	measure 'Total Orders' = DISTINCTCOUNT(FactSales[SalesOrderKey])
+		formatString: #,0
+		displayFolder: Sales
+
+	measure 'Units Sold' = SUM(FactSales[Quantity])
+		formatString: #,0
+		displayFolder: Sales
+
+	measure 'Avg Order Value' = DIVIDE([Total Sales], [Total Orders])
+		formatString: #,0.00
+		displayFolder: Sales
+
+	measure 'Active Customers' = DISTINCTCOUNT(FactSales[CustomerKey])
+		formatString: #,0
+		displayFolder: Sales
+
+	measure 'Profit Margin %' = DIVIDE([Total Profit], [Total Sales], 0)
+		formatString: 0.0%
+		displayFolder: Finance
+
+	measure 'Sales YTD' = TOTALYTD([Total Sales], DimDate[Date])
+		formatString: #,0
+		displayFolder: Time Intelligence
+
+	measure 'Sales QTD' = TOTALQTD([Total Sales], DimDate[Date])
+		formatString: #,0
+		displayFolder: Time Intelligence
+
+	measure 'Sales MTD' = TOTALMTD([Total Sales], DimDate[Date])
+		formatString: #,0
+		displayFolder: Time Intelligence
+
+	measure 'Sales Previous Year' = CALCULATE([Total Sales], SAMEPERIODLASTYEAR(DimDate[Date]))
+		formatString: #,0
+		displayFolder: Time Intelligence
+
+	measure 'YoY Growth %' = DIVIDE([Total Sales] - [Sales Previous Year], [Sales Previous Year], 0)
+		formatString: 0.0%
+		displayFolder: Time Intelligence
+
+	measure 'Rolling 3 Month Sales' = CALCULATE([Total Sales], DATESINPERIOD(DimDate[Date], MAX(DimDate[Date]), -3, MONTH))
+		formatString: #,0
+		displayFolder: Time Intelligence
+
+	measure 'Rolling 3 Month Avg' = DIVIDE([Rolling 3 Month Sales], 3)
+		formatString: #,0
+		displayFolder: Time Intelligence
+
+	measure 'Sales MoM %' = VAR Prev = CALCULATE([Total Sales], DATEADD(DimDate[Date], -1, MONTH)) RETURN DIVIDE([Total Sales] - Prev, Prev)
+		formatString: 0.0%
+		displayFolder: Time Intelligence
+
+	column SalesOrderKey
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: SalesOrderKey
+
+	column OrderDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: OrderDate
+
+	column CustomerKey
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: CustomerKey
+
+	column ProductKey
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: ProductKey
+
+	column TerritoryKey
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: TerritoryKey
+
+	column Quantity
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+	column DiscountPct
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: DiscountPct
+
+	column SalesAmount
+		dataType: double
+		summarizeBy: sum
+		formatString: #,0.00
+		sourceColumn: SalesAmount
+
+	column CostAmount
+		dataType: double
+		summarizeBy: sum
+		formatString: #,0.00
+		sourceColumn: CostAmount
+
+	column ProfitAmount
+		dataType: double
+		summarizeBy: sum
+		formatString: #,0.00
+		sourceColumn: ProfitAmount
+
+	partition FactSales = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\FactSales.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"SalesOrderKey", Int64.Type}, {"OrderDate", type date}, {"CustomerKey", Int64.Type}, {"ProductKey", Int64.Type}, {"TerritoryKey", Int64.Type}, {"Quantity", Int64.Type}, {"DiscountPct", type number}, {"SalesAmount", type number}, {"CostAmount", type number}, {"ProfitAmount", type number}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

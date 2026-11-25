@@ -1,0 +1,42 @@
+table DimDate
+	dataCategory: Time
+
+	column Date
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		isKey
+		summarizeBy: none
+		sourceColumn: Date
+
+	column Year
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: Year
+
+	column MonthNumber
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: MonthNumber
+
+	column MonthName
+		dataType: string
+		sortByColumn: MonthNumber
+		summarizeBy: none
+		sourceColumn: MonthName
+
+	column Quarter
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Quarter
+
+	partition DimDate = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\DimDate.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"Date", type date}, {"Year", Int64.Type}, {"MonthNumber", Int64.Type}, {"MonthName", type text}, {"Quarter", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

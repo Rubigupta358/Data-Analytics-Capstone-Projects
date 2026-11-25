@@ -1,0 +1,16 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+
+ref table DimDate
+ref table DimProduct
+ref table DimCustomer
+ref table DimTerritory
+ref table FactSales
+ref table UserRegion
+
+ref expression DataFolder
+
+ref role RegionManager
+ref role Executive

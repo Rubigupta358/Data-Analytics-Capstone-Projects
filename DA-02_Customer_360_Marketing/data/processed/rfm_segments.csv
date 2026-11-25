@@ -1,0 +1,130 @@
+customer_id,Recency,Frequency,Monetary,Recency_Score,Frequency_Score,Monetary_Score,RFM_Score,Segment
+1,317,1,42.15,4,1,1,411,New / Promising
+2,17,2,857.8699999999999,1,2,3,123,Needs Attention
+3,281,1,582.38,4,1,2,412,New / Promising
+4,86,3,354.1,2,3,1,231,Needs Attention
+5,21,3,352.7,1,3,1,131,Needs Attention
+6,164,2,611.97,3,2,3,323,New / Promising
+7,221,2,477.48,4,2,2,422,New / Promising
+8,119,3,987.6699999999998,3,3,4,334,Loyal / High Value
+9,100,3,1138.44,2,3,4,234,Loyal / High Value
+11,41,5,2395.9,1,4,4,144,Loyal / High Value
+12,116,1,263.48,3,1,1,311,New / Promising
+13,19,2,684.4,1,2,3,123,Needs Attention
+14,150,3,491.06,3,3,2,332,Needs Attention
+15,357,1,296.17,4,1,1,411,New / Promising
+16,168,4,967.12,3,4,3,343,Loyal / High Value
+17,44,3,830.6800000000001,1,3,3,133,Loyal / High Value
+18,72,1,491.67,2,1,2,212,Needs Attention
+19,140,1,351.23,3,1,1,311,New / Promising
+20,112,3,848.0799999999999,3,3,3,333,Loyal / High Value
+21,214,1,324.2,4,1,1,411,New / Promising
+22,219,2,909.65,4,2,3,423,New / Promising
+23,57,2,1126.69,2,2,4,224,Needs Attention
+24,42,2,415.64,1,2,2,122,Needs Attention
+27,323,2,1086.25,4,2,4,424,New / Promising
+28,19,4,517.88,1,4,2,142,Needs Attention
+30,112,1,517.31,3,1,2,312,New / Promising
+31,181,2,474.43,3,2,2,322,New / Promising
+32,58,2,876.22,2,2,3,223,Needs Attention
+33,61,3,538.94,2,3,2,232,Needs Attention
+34,104,3,690.3,3,3,3,333,Loyal / High Value
+35,11,4,1538.88,1,4,4,144,Loyal / High Value
+37,363,1,385.78,4,1,2,412,New / Promising
+38,331,1,310.0,4,1,1,411,New / Promising
+39,150,2,803.72,3,2,3,323,New / Promising
+40,13,4,1962.27,1,4,4,144,Loyal / High Value
+41,114,2,953.09,3,2,3,323,New / Promising
+42,102,3,735.03,2,3,3,233,Loyal / High Value
+43,1,3,1457.04,1,3,4,134,Loyal / High Value
+44,141,1,83.52,3,1,1,311,New / Promising
+45,24,2,471.34,1,2,2,122,Needs Attention
+46,157,1,199.37,3,1,1,311,New / Promising
+47,173,2,881.8900000000001,3,2,3,323,New / Promising
+48,80,2,380.02,2,2,2,222,Needs Attention
+49,27,2,797.8,1,2,3,123,Needs Attention
+50,20,4,1147.77,1,4,4,144,Loyal / High Value
+51,238,3,594.31,4,3,3,433,Loyal / High Value
+52,175,1,58.81,3,1,1,311,New / Promising
+53,71,4,1471.67,2,4,4,244,Loyal / High Value
+54,257,2,704.7,4,2,3,423,New / Promising
+55,23,1,32.02,1,1,1,111,Needs Attention
+56,53,1,172.07,2,1,1,211,Needs Attention
+57,132,4,787.1600000000001,3,4,3,343,Loyal / High Value
+59,232,1,333.38,4,1,1,411,New / Promising
+61,109,2,472.9,3,2,2,322,New / Promising
+62,38,4,1001.84,1,4,4,144,Loyal / High Value
+63,100,5,1309.97,2,4,4,244,Loyal / High Value
+64,248,2,322.14000000000004,4,2,1,421,New / Promising
+65,106,1,298.86,3,1,1,311,New / Promising
+66,4,3,679.2,1,3,3,133,Loyal / High Value
+67,141,5,1251.61,3,4,4,344,Loyal / High Value
+68,56,4,743.35,2,4,3,243,Loyal / High Value
+69,184,1,582.83,3,1,3,313,New / Promising
+70,29,2,972.9100000000001,1,2,4,124,Needs Attention
+71,242,1,185.2,4,1,1,411,New / Promising
+72,329,1,483.87,4,1,2,412,New / Promising
+73,73,3,1146.71,2,3,4,234,Loyal / High Value
+74,269,2,490.26,4,2,2,422,New / Promising
+75,289,1,437.85,4,1,2,412,New / Promising
+76,64,3,1084.1,2,3,4,234,Loyal / High Value
+77,167,4,1877.83,3,4,4,344,Loyal / High Value
+78,41,5,2189.3199999999997,1,4,4,144,Loyal / High Value
+79,156,4,1957.75,3,4,4,344,Loyal / High Value
+80,102,3,980.7900000000001,2,3,4,234,Loyal / High Value
+81,48,1,43.84,2,1,1,211,Needs Attention
+82,34,3,837.81,1,3,3,133,Loyal / High Value
+83,219,2,689.0899999999999,4,2,3,423,New / Promising
+84,93,3,1084.58,2,3,4,234,Loyal / High Value
+85,40,2,306.09,1,2,1,121,Needs Attention
+86,344,2,1029.58,4,2,4,424,New / Promising
+87,237,1,222.95,4,1,1,411,New / Promising
+89,74,3,898.59,2,3,3,233,Loyal / High Value
+90,178,1,377.82,3,1,1,311,New / Promising
+91,207,3,794.75,4,3,3,433,Loyal / High Value
+92,108,2,750.8199999999999,3,2,3,323,New / Promising
+93,251,2,454.27,4,2,2,422,New / Promising
+95,40,3,721.86,1,4,3,143,Loyal / High Value
+96,4,2,417.24,1,3,2,132,Needs Attention
+97,55,1,597.77,2,1,3,213,Needs Attention
+99,68,2,59.790000000000006,2,3,1,231,Needs Attention
+100,325,1,479.49,4,1,2,412,New / Promising
+101,142,3,476.28999999999996,3,4,2,342,Needs Attention
+102,68,3,1105.85,2,4,4,244,Loyal / High Value
+103,106,2,842.83,3,3,3,333,Loyal / High Value
+104,30,3,382.17999999999995,1,4,2,142,Needs Attention
+105,298,1,444.87,4,1,2,412,New / Promising
+106,87,1,217.21,2,1,1,211,Needs Attention
+108,194,1,494.75,4,1,2,412,New / Promising
+109,33,2,553.63,1,3,2,132,Needs Attention
+110,37,4,1256.5800000000002,1,4,4,144,Loyal / High Value
+111,38,6,1807.92,1,4,4,144,Loyal / High Value
+112,259,2,734.0,4,3,3,433,Loyal / High Value
+114,45,3,848.88,2,4,3,243,Loyal / High Value
+115,90,3,1327.8,2,4,4,244,Loyal / High Value
+116,131,3,540.79,3,4,2,342,Needs Attention
+117,64,1,220.65,2,1,1,211,Needs Attention
+118,357,1,238.49,4,1,1,411,New / Promising
+119,308,2,391.25,4,3,2,432,Needs Attention
+120,19,2,544.8000000000001,1,3,2,132,Needs Attention
+121,113,1,48.5,3,1,1,311,New / Promising
+122,253,1,185.43,4,1,1,411,New / Promising
+124,52,2,378.51,2,3,1,231,Needs Attention
+125,29,3,1037.22,1,4,4,144,Loyal / High Value
+127,84,1,470.76,2,2,2,222,Needs Attention
+128,13,3,510.31000000000006,1,4,2,142,Needs Attention
+129,56,2,891.0,2,3,3,233,Loyal / High Value
+133,276,1,468.07,4,2,2,422,New / Promising
+135,351,1,213.12,4,2,1,421,New / Promising
+136,43,2,610.94,1,3,3,133,Loyal / High Value
+138,174,1,298.32,3,2,1,321,New / Promising
+139,342,3,1007.33,4,4,4,444,Loyal / High Value
+140,60,6,1838.51,2,4,4,244,Loyal / High Value
+142,47,5,1925.17,2,4,4,244,Loyal / High Value
+143,13,3,357.93,1,4,1,141,Needs Attention
+144,97,1,367.44,2,2,1,221,Needs Attention
+145,127,1,85.84,3,2,1,321,New / Promising
+146,75,2,474.98,2,3,2,232,Needs Attention
+147,145,2,478.23,3,3,2,332,Needs Attention
+148,14,3,1032.74,1,4,4,144,Loyal / High Value
+149,24,4,1013.1700000000001,1,4,4,144,Loyal / High Value

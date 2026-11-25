@@ -1,0 +1,19 @@
+version: 2
+sources:
+  - name: raw
+    schema: analytics_raw
+    tables:
+      - name: sessions
+      - name: orders
+      - name: crm_customers
+models:
+  - name: stg_sessions
+    columns:
+      - name: session_id
+        tests: [not_null, unique]
+      - name: customer_id
+        tests: [not_null]
+  - name: customer_profile
+    columns:
+      - name: customer_id
+        tests: [not_null, unique]

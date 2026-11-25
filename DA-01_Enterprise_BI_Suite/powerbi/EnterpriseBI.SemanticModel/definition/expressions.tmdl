@@ -1,0 +1,2 @@
+expression DataFolder = "C:\Capstone\DA-01_Enterprise_BI\data" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 6b0b2d52-3c1f-4d3e-9b1a-0a1e5f6c7d01

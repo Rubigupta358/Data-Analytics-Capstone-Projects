@@ -1,0 +1,10 @@
+Region manager row-level security:
+1. Create role RegionManager in Power BI Desktop.
+2. Apply this filter to DimTerritory:
+   [Region] = USERPRINCIPALNAME()
+   This expression is suitable only when Region contains the signed-in email mapping.
+3. For a practical email-to-region setup, create a UserRegion table with UserEmail and Region,
+   relate it to DimTerritory, and use:
+   UserRegion[UserEmail] = USERPRINCIPALNAME()
+4. Test the role with View As. Publish and assign users in Power BI Service.
+Note: Service publishing and scheduled refresh require a Power BI Service account.
